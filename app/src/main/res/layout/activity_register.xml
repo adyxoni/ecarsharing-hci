@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:focusableInTouchMode="true"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+
+        app:srcCompat="@drawable/illustration" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:paddingTop="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/viewParent.headerText.NoMode"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="Register a\nnew account" />
+
+                    <ImageView
+                        android:layout_width="208dp"
+                        android:layout_height="176dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ecokey" />
+
+                </RelativeLayout>
+
+
+                <EditText
+                    android:id="@+id/editTextEmail"
+                    style="@style/modifiedEditText"
+                    android:hint="Email"
+                    android:paddingTop="30dp"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"/>
+
+
+                <EditText
+                    android:id="@+id/editTextPassword"
+                    style="@style/modifiedEditText"
+                    android:hint="Password"
+                    android:paddingTop="30dp"
+                    android:inputType="textPassword"
+                    android:maxLines="1"/>
+
+
+                <EditText
+                    android:id="@+id/editTextConfirmPassword"
+                    style="@style/modifiedEditText"
+                    android:hint="Confirm Password"
+                    android:paddingTop="30dp"
+                    android:inputType="textPassword"
+                    android:maxLines="1"/>
+
+
+                <EditText
+                    android:id="@+id/editTextPhone"
+                    style="@style/modifiedEditText"
+                    android:hint="Phone Number"
+                    android:paddingTop="30dp"
+                    android:inputType="phone"
+                    android:maxLines="1"/>
+
+                <EditText
+                    android:id="@+id/editTextAddress"
+                    style="@style/modifiedEditText"
+                    android:hint="Address"
+                    android:paddingTop="30dp"
+                    android:inputType="text"
+                    android:maxLines="1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_date"
+                    android:paddingTop="30dp"
+                    android:paddingLeft="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Choose Date of Birth"
+                    android:textColor="#000"
+                    style="@style/modifiedEditText"/>
+
+
+
+                <Button
+                    android:id="@+id/signup"
+                    android:layout_width="187dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="45dp"
+                    android:fontFamily="@font/poppinsbold"
+                    android:gravity="center"
+                    android:text="Sign Up"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:theme="@style/modifiedEditText" />
+
+                <TextView
+                    android:id="@+id/account"
+                    style="@style/viewParent"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Already have an account?"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="@dimen/newsMoreTextSize"
+                    android:clickable="true"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+</RelativeLayout>
